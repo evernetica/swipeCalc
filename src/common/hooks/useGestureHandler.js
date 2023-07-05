@@ -6,7 +6,7 @@ let interval = null;
 
 export const useGestureHandler = () => {
   const [historyText, setHistoryText] = useState("");
-  const [currentText, setCurrentText] = React.useState("22 + 44 + 33");
+  const [currentText, setCurrentText] = React.useState("");
   const [number, setNumber] = React.useState(0);
   const [isError, setIsError] = React.useState(false);
 
