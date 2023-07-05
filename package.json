@@ -6,12 +6,17 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
-    "start": "react-native start",
+    "start": "react-native start --reset-cache",
     "test": "jest"
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.72.1"
+    "react-native": "0.72.1",
+    "react-native-gesture-handler": "^2.12.0",
+    "react-native-sensors": "^7.3.6",
+    "rxjs": "^7.8.1",
+    "styled-components": "^6.0.2",
+    "use-shake-callback": "^1.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -33,5 +38,8 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
