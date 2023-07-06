@@ -37,8 +37,8 @@ function App(): JSX.Element {
               paddingVertical={"10px"}
               paddingHorizontal={"10px"}
               borderColor={"orange"}
-              borderWidth={"2px"}
-              borderRadius={"10px"}
+              bW={"2px"}
+              bR={"10px"}
             >
               <Text
                 multiline
@@ -63,7 +63,7 @@ function App(): JSX.Element {
             >
               <Text>{number}</Text>
               <Block
-                borderRadius={"100px"}
+                bR={"100px"}
                 width={"100px"}
                 height={"100px"}
                 bg={"rgba(255,165,0,0.5)"}
