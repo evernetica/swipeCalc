@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { accelerometer, SensorTypes, setUpdateIntervalForType } from "react-native-sensors";
 import { map, filter } from "rxjs/operators";
+import { Platform } from "react-native";
 
 export const useShakeListener = (callback) => {
   useEffect(() => {
-    const SHAKE_THRESHOLD = 3;
+    const SHAKE_THRESHOLD = Platform.OS === "ios" ? 3 : 20;
     const MIN_TIME_BETWEEN_SHAKES_MILLISECS = 1000;
     setUpdateIntervalForType(SensorTypes.accelerometer, 200);
     let lastShakeTime = 0;
